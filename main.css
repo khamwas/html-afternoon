@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "delano";
+  src: url("/delano.ttf") format("truetype");
+}
+
+* {
+  font-family: "delano", Fallback, sans-serif;
+}
+
+img {
+  height: 200px;
+}
+
+.background {
+/* background-image: url(https://s3.amazonaws.com/designco-web-assets/uploads/2017/07/Podcast-large_2x-1450x1112.png); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #b6a464;
+  z-index: -10;
+}
+
+.socialIconsCont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  height: 250px;
+}
+.socialIcons:hover {
+  background-color: #2a344f;
+}
+.socialIcons {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid #2a344f 1px;
+}
+
+h1,
+p,
+button {
+  height: 5px;
+  color:#2a344f;
+}
+h1{
+    font-size: 48px;
+    color: #2a344f;
+    margin-bottom: 70px;
+    margin-top: -25px;
+}
+p {
+  max-width: 500px;
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 2;
+}
+
+button {
+    margin-top: 125px;
+  /* margin: 100px; */
+  height: 50px;
+  border-radius: 20%;
+  border: solid white 1px;
+  color: #2a344f
+  rotate: 90%;
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+  background: #b6a464;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logoCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #2a344f;
+  height: 100px;
+  width: 20vw;
+}
+.navTextCont {
+  width: 80vw;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+}
+.buttonCont {
+  width: 20vw;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: center;
+  padding: -100px;
+}
+
+.logoImg {
+  height: 100px;
+}
+
+.navButton {
+  height: 50px;
+  width: 100px;
+  padding: 0;
+  border-radius: 20%;
+  margin:10px;
+}
+
+.rotate {
+  color: white;
+  position: fixed;
+  bottom: 50px;
+  left: 5px;
+  transform: rotate(270deg);
+}
+
+.rotate:hover {
+  color: #2a344f;
+}
